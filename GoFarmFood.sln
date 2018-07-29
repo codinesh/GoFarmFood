@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoFarmFood.Web", "GoFarmFood\GoFarmFood.Web.csproj", "{80A5BFD7-548C-4BB0-B172-E88CD1A4F339}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoFarmFood.Core", "GoFarmFood.Core\GoFarmFood.Core.csproj", "{3D0D1DD5-2395-44EA-9828-D8FC2067C3B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80A5BFD7-548C-4BB0-B172-E88CD1A4F339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80A5BFD7-548C-4BB0-B172-E88CD1A4F339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0D1DD5-2395-44EA-9828-D8FC2067C3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0D1DD5-2395-44EA-9828-D8FC2067C3B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67A6214F-77DB-46F9-A537-74301237AD0D}
+	EndGlobalSection
+EndGlobal
