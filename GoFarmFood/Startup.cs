@@ -6,11 +6,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.Infrastructure.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace HarishApplication
+namespace GoFarmFood.Web
 {
     public class Startup
     {
@@ -60,7 +59,7 @@ namespace HarishApplication
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            app.UseAuthentication();
+            ////app.UseAuthentication();
 
             app.UseMvc(routes =>
             {

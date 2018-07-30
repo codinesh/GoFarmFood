@@ -6,7 +6,7 @@ using Microsoft.eShopWeb.Infrastructure.Data;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace HarishApplication
+namespace GoFarmFood.Web
 {
     public class Program
     {
@@ -14,7 +14,6 @@ namespace HarishApplication
         {
             var host = CreateWebHostBuilder(args)
                         .Build();
-
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -30,7 +29,7 @@ namespace HarishApplication
                     logger.LogError(ex, "An error occurred seeding the DB.");
                 }
             }
-
+            host.Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
