@@ -4,8 +4,9 @@ using System.Collections.Generic;
 
 namespace GoFarmFood.Web.DataAccess.Entities.ConsumerAggregate
 {
-    public class Consumer : Person
+    public class Rider : Person
     {
-        public virtual ICollection<PreferredFarmer> PreferredFarmers { get; set; }
+        public Guid RiderId { get; set; }
+        public Guid OrderId { get; set; }
     }
 }

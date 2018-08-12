@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace GoFarmFood.Web.DataAccess.Entities
+namespace GoFarmFood.Web.DataAccess.Entities.Common
 {
     public abstract class BaseEntity
     {

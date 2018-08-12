@@ -13,7 +13,7 @@ namespace GoFarmFood.DataAccess.Context
         }
 
         public DbSet<Farmer> Farmers { get; set; }
-        public DbSet<Consumer> Consumers { get; set; }
+        public DbSet<Rider> Consumers { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Item> Items { get; set; }
         public DbSet<AvailableItem> AvailableItems { get; set; }

@@ -7,8 +7,8 @@ namespace GoFarmFood.Web.DataAccess.Entities.ConsumerAggregate
     {
         public Guid ConsumerId { get; set; }
         public Guid FarmerId { get; set; }
-        public ItemType ItemType { get; set; }
+        public Category ItemType { get; set; }
 
-        public virtual Consumer Consumer { get; set; }
+        public virtual Rider Consumer { get; set; }
     }
 }

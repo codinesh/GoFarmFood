@@ -78,21 +78,21 @@ namespace Microsoft.eShopWeb.Infrastructure.Data
             {
                 new Item() {
                     Id = itemId,
-                    ItemType = ItemType.BuffalloMilk,
+                    ItemType = Category.BuffalloMilk,
                     Name = "Buffallo Milk",
                     UnitPrice = 70
                 },
 
                  new Item() {
                     Id = itemId1,
-                    ItemType = ItemType.CowGhee,
+                    ItemType = Category.CowGhee,
                     Name = "Cow Ghee",
                     UnitPrice = 200
                 },
 
                   new Item() {
                     Id = itemId2,
-                    ItemType = ItemType.CowMilk,
+                    ItemType = Category.CowMilk,
                     Name = "Cow Milk",
                     UnitPrice = 90
                 },

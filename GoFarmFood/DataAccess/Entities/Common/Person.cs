@@ -1,6 +1,6 @@
-﻿using GoFarmFood.Web.DataAccess.Entities.Common;
+﻿using System;
 
-namespace GoFarmFood.Web.DataAccess.Entities
+namespace GoFarmFood.Web.DataAccess.Entities.Common
 {
     public class Person : BaseEntity
     {
@@ -8,6 +8,10 @@ namespace GoFarmFood.Web.DataAccess.Entities
 
         public string LastName { get; set; }
 
+        public Guid AddressId { get; set; }
+
         public Address Address { get; set; }
+
+        public int Proximity { get; set; }
     }
 }

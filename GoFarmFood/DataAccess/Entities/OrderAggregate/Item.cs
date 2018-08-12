@@ -1,12 +1,13 @@
-﻿using GoFarmFood.Web.DataAccess.Entities.Common.Enums;
+﻿using GoFarmFood.Web.DataAccess.Entities.Common;
+using GoFarmFood.Web.DataAccess.Entities.Common.Enums;
 
 namespace GoFarmFood.Web.DataAccess.Entities.OrderAggregate
 {
-    public class Item : BaseEntity
+    public class ProductItem : BaseEntity
     {
         public string Name { get; set; }
 
-        public ItemType ItemType { get; set; }
+        public Category Category { get; set; }
 
         public double UnitPrice { get; set; }
     }
