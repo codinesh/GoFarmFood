@@ -14,4 +14,8 @@
     <ProjectReference Include="..\GoFarmFood.Core\GoFarmFood.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,5 @@
-﻿using GoFarmFood.Web.DataAccess.Entities.Common.Enums;
+﻿using GoFarmFood.Web.DataAccess.Entities.Common;
+using GoFarmFood.Web.DataAccess.Entities.Common.Enums;
 using System;
 
 namespace GoFarmFood.Web.DataAccess.Entities.ConsumerAggregate
@@ -9,6 +10,6 @@ namespace GoFarmFood.Web.DataAccess.Entities.ConsumerAggregate
         public Guid FarmerId { get; set; }
         public Category ItemType { get; set; }
 
-        public virtual Rider Consumer { get; set; }
+        public virtual Rider Rider { get; set; }
     }
 }

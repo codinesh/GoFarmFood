@@ -2,6 +2,7 @@
 using GoFarmFood.Web.DataAccess.Entities.Common.Enums;
 using GoFarmFood.Web.DataAccess.Entities.FarmerAggregate;
 using GoFarmFood.Web.DataAccess.Entities.OrderAggregate;
+using GoFarmFood.Web.DataAccess.Entities.ProductAggregate;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -35,9 +36,9 @@ namespace Microsoft.eShopWeb.Infrastructure.Data
                     await appDBContext.SaveChangesAsync();
                 }
 
-                if (!appDBContext.Items.Any())
+                if (!appDBContext.Products.Any())
                 {
-                    appDBContext.Items.AddRange(
+                    appDBContext.Products.AddRange(
                         GetPreconfiguredItems());
 
                     await appDBContext.SaveChangesAsync();
@@ -72,29 +73,26 @@ namespace Microsoft.eShopWeb.Infrastructure.Data
             };
         }
 
-        static IEnumerable<Item> GetPreconfiguredItems()
+        static IEnumerable<Product> GetPreconfiguredItems()
         {
-            return new List<Item>()
+            return new List<Product>()
             {
-                new Item() {
+                new Product() {
                     Id = itemId,
-                    ItemType = Category.BuffalloMilk,
-                    Name = "Buffallo Milk",
-                    UnitPrice = 70
+                    Category = Category.BuffalloMilk,
+                    Name = "Buffallo Milk"
                 },
 
-                 new Item() {
+                 new Product() {
                     Id = itemId1,
-                    ItemType = Category.CowGhee,
+                    Category = Category.CowGhee,
                     Name = "Cow Ghee",
-                    UnitPrice = 200
                 },
 
-                  new Item() {
+                  new Product() {
                     Id = itemId2,
-                    ItemType = Category.CowMilk,
+                    Category = Category.CowMilk,
                     Name = "Cow Milk",
-                    UnitPrice = 90
                 },
             };
         }
@@ -107,35 +105,35 @@ namespace Microsoft.eShopWeb.Infrastructure.Data
                     Id = Guid.NewGuid(),
                     FarmerId = farmerId,
                     CapacityPerDay = 10,
-                    ItemId = itemId
+                    ProductItemId = itemId
                 },
 
                 new AvailableItem() {
                     Id = Guid.NewGuid(),
                     FarmerId = farmerId,
                     CapacityPerDay = 10,
-                    ItemId = itemId1
+                    ProductItemId = itemId1
                 },
 
                 new AvailableItem() {
                     Id = Guid.NewGuid(),
                     FarmerId = farmerId1,
                     CapacityPerDay = 10,
-                    ItemId = itemId1
+                    ProductItemId = itemId1
                 },
 
                 new AvailableItem() {
                     Id = Guid.NewGuid(),
                     FarmerId = farmerId1,
                     CapacityPerDay = 10,
-                    ItemId = itemId2
+                    ProductItemId = itemId2
                 },
 
                 new AvailableItem() {
                     Id = Guid.NewGuid(),
                     FarmerId = farmerId1,
                     CapacityPerDay = 10,
-                    ItemId = itemId
+                    ProductItemId = itemId
                 },
             };
         }

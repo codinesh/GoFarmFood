@@ -1,5 +1,7 @@
 ﻿using GoFarmFood.Web.DataAccess.Entities.Common;
+using GoFarmFood.Web.DataAccess.Entities.ConsumerAggregate;
 using System;
+using System.Collections.Generic;
 
 namespace GoFarmFood.Web.DataAccess.Entities.OrderAggregate
 {
@@ -19,6 +21,8 @@ namespace GoFarmFood.Web.DataAccess.Entities.OrderAggregate
 
         public DateTime EndDate { get; set; }
 
-        public PaymentInformation PaymentInfor { get; set; }
+        public PaymentInformation PaymentInformation { get; set; }
+
+        public ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

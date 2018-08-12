@@ -1,6 +1,6 @@
 ﻿using GoFarmFood.Core.Interfaces;
 using GoFarmFood.DataAccess.Context;
-using GoFarmFood.Web.DataAccess.Entities;
+using GoFarmFood.Web.DataAccess.Entities.Common;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
